@@ -1,7 +1,7 @@
 const axios = require('axios');
-//const { OMDB_API_KEY } = process.env;
+const { OMDB_API_KEY } = process.env;
 //const { OMDB_API_KEY } = '7035c60c';
-const OMDB_API_KEY ='7035c60c'
+//const OMDB_API_KEY ='7035c60c'
 exports.handler = async function (event) {
   const payload = JSON.parse(event.body);
   const { title, type, year, page, id } = payload;
